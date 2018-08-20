@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "prettier": "^1.13.7"
+  },
+  "scripts": {
+    "start": "http-server -p 8000"
+  },
+}

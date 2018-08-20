@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Stefan Stoffberg</title>
+    <link rel="stylesheet" type="text/css" href="./public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container-text">
+              <h1 class="header-text">Stefan Stoffberg</h1>
+              <div class="scroll-text">
+                  <h3 class="job-text2">  Web</h3>
+                  <h3 class="job-text3">.NET</h3>
+                  <h3 class="job-text"> | Developer</h3>
+              </div>
+            </div>
+            <button onclick="noScroll" class="trigger">About Me</button>
+            <h4 class="project-text"><bold>Projects</bold></h4>
+            <i class="fas fa-arrow-down" id="arrow"></i>
+
+            <div class="modal">
+                <div class="modal-content">
+
+                    <div class="about-me-info">
+                    		<img class="about-me-image">
+                        <h1 class="about-me-title">About Me</h1>
+                        <div class="about-me-scroll-text">
+                            <h3 class="about-me-job-text-web">Web</h3>
+                            <h3 class="about-me-job-text-net">.NET</h3>
+                            <h3 class="about-me-job-text"> | Developer</h3>
+                        </div>
+                        <p class="about-me-text">Hi, I'm Stefan. I'm a normal guy that's passionate about learning new technologies and building elegant websites. I like to
+                            <strong>resolve</strong> design problems, <strong>create</strong> beautiful user-interfaces, and develop lively web experiences &
+                            <strong>applications</strong>. When I'm not working, or dabbling with code, I like to put my cooking skills to the test while simultaneously trying not to burn down the kitchen
+                            <em> or my food</em>
+                            <br>
+                            <div class="skill-icon">
+	                            <i class="fab fa-js-square" id="javascript-icon"></i>
+	                            <i class="fab fa-css3-alt" id="css-icon"></i>
+	                            <i class="fab fa-react" id="react-icon"></i>
+	                          </div>
+                    </div>
+                    <div class="contact-info">
+                    	<i class="fas fa-times" id="close-btn"></i>
+                        <form class="contact-form" method="POST" action="https://formcarry.com/s/IqeYfVqnfyJ">
+                            <h1>Let's Talk.</h1>
+                            <input type="text" name="name" placeholder="Name" class="input-name" required>
+                            <span class="fas fa-user-circle" id="name-icon"></span>
+                            <br>
+                            <input type="email" name="_replyto" placeholder="Email" class="contact-info-email" required>
+                            <span class="fas fa-at" id="email-icon"></span>
+                            <br>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <span class="far fa-comment" id="message-icon"></span>
+                            <br>
+                            <button class="contact-info-btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+      <article class="project">
+        <div class="article-project-flix">
+          <div class="project-info" data-aos="fade-right" data-aos-duration="1500">
+            <img src="./public/img/project-img-flix.png" class="project-img" data-aos="fade-left" data-aos-duration="1500">
+            <br>
+            <h1 class="project-title">Flix</h1>
+            <br>
+            <h4>Mini Netflix</h4>
+            <br>
+            <p class="project-desc">Netflix clone built using React.js. <br>
+              Making use of React's powerful virtual DOM manipulation, a simple search function was implemented. <br>
+              <br>
+              By typing in keyphrases or letters, tv shows are filtered, and desired results are shown almost instantly.
+              Each tv show has it's own page showcasing a trailer.
+             </p>
+             <div class="project-skill-icon">
+               <i class="fab fa-js-square" id="javascript-icon"></i>
+               <i class="fab fa-css3-alt" id="css-icon"></i>
+               <i class="fab fa-html5" id="html-icon"></i>
+               <i class="fab fa-react" id="react-icon"></i>
+             </div>
+            <div class="div-btn">
+              <a class="project-site-btn" href="https://reactappflix.herokuapp.com/">Check it out!</a>
+              <div class="div-btn-code">
+                <a class="project-code-btn" id="project-flix-code-btn" href="https://github.com/Stoffy92/ReactProd">View Code</a>
+              </div>
+           </div>
+          </div>
+        </div>
+        <div class="article-project-yelp">
+          <div class="project-info" data-aos="fade-left" data-aos-duration="1500">
+            <img src="./public/img/project-img-yelp.png" class="project-img" data-aos="fade-right" data-aos-duration="1500">
+            <br>
+            <h1 class="project-title">Yelp Camp</h1>
+            <br>
+            <h4>Campsite Review</h4>
+            <br>
+            <p class="project-desc">A Fullstack web-app with full CRUD functionality. Users may sign-up, post their favourite campsites with it's price per night, location and more. <br>
+             Campsite owners have full moderation over their own post, and have the option of deleting unwanted comments. All data is stored with MongoDB in conjuction with node.js in the backend</p>
+            <div class="project-skill-icon">
+               <i class="fab fa-js-square" id="javascript-icon"></i>
+               <i class="fab fa-css3-alt" id="css-icon"></i>
+               <i class="fab fa-html5" id="html-icon"></i>
+               <i class="fab fa-node" id="nodejs-icon"></i>
+               <i class="fas fa-bold" id="bootstrap-icon"></i>
+             </div>
+             <div class="div-btn" id="div-yelp-btn">
+              <a class="project-site-btn" id="project-yelp-site-btn" href="https://yelp-camp-92.herokuapp.com">Check it out!</a>
+              <div class="div-btn-code">
+                <a class="project-code-btn" id="project-yelp-code-btn" href="https://github.com/Stoffy92/YelpCamp">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-project-digital">
+          <div class="project-info" data-aos="fade-right" data-aos-duration="1500">
+            <img src="./public/img/project-img-digital.png" class="project-img" data-aos="fade-left" data-aos-duration="1500">
+            <br>
+            <h1 class="project-title">Digital X</h1>
+            <br>
+            <h4>E-commerce Store</h4>
+            <br>
+            <p class="project-desc">Developed using .NET technologies, written in C# - (c-sharp). This simple e-commerce store achieves full CRUD functionality with the use of a WPF Service. All data is stored within an SQL Database and is retrieved via WPF service and linq queries</p>
+            <div class="project-skill-icon">
+               <i class="fab fa-js-square" id="javascript-icon"></i>
+               <i class="fab fa-css3-alt" id="css-icon"></i>
+               <i class="fab fa-html5" id="html-icon"></i>
+               <i class="fab fa-slack-hash" id="csharp-icon"></i>
+               <i class="fas fa-database" id="sql-icon"></i>
+             </div>
+             <div class="div-digital-code">
+              <a class="project-code-btn" id="project-digital-code-btn" href="https://github.com/Stoffy92/ShoppingCartWCF">View Code</a>
+             </div>
+          </div>
+        </div>
+      </article>
+    <script type="text/javascript" src="./public/javascript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
