@@ -975,8 +975,9 @@ article {
 }
 
 
+
 /* Desktop Styles */
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1080px) {
 	.article-project-flix,
 	.article-project-digital,
 	.article-project-yelp {
