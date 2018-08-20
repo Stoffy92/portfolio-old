@@ -208,7 +208,8 @@ header {
 }
 
 .no-scroll {
-    overflow: hidden;
+    body {
+	    overflow: hidden;
 }
 
 
