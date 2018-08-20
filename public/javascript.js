@@ -8,7 +8,7 @@ const sendMessageBtn = document.querySelector('.contact-info-btn');
 
 function toggleModal() { // Popup Contact Form
 	modal.classList.toggle('show-modal');
-	noscroll.classList.toggle('no-scroll');
+// 	noscroll.classList.toggle('no-scroll');
 }
 
 function noScroll() {
@@ -20,7 +20,7 @@ function windowOnClick(event) { // Close Form
 	if (event.target === modal) {
 		toggleModal();
 	}
-	noscroll.classList.toggle('no-scroll');
+// 	noscroll.classList.toggle('no-scroll');
 }
 
 function validateEmail(email){
