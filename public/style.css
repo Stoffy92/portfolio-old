@@ -482,8 +482,7 @@ article {
 .article-project-flix,
 .article-project-digital,
 .article-project-yelp {
-	position: relative;
-	z-index: 1;
+
 }
 
 .article-project-flix h1,
