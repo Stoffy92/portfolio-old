@@ -478,6 +478,12 @@ article {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.article-project-flix,
+.article-project-digital,
+.article-project-yelp {
+	z-index: 3000;
+}
+
 .article-project-flix h1,
 .article-project-flix p,
 .article-project-flix h4,
