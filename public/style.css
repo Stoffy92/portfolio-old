@@ -182,7 +182,7 @@ header {
 	visibility: hidden;
 	transform: scale(1.1);
 	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-	z-index: 9000;
+	z-index: 3;
 }
 .modal-content {
 	position: absolute;
@@ -193,7 +193,7 @@ header {
 	height: 69%;
 	overflow: hidden;
 	border-radius: 0.5rem;
-	z-index: 9000;
+	z-index: 3;
 }
 
 .about-me-info,
@@ -481,7 +481,7 @@ article {
 .article-project-flix,
 .article-project-digital,
 .article-project-yelp {
-	z-index: 3000;
+	z-index: 1;
 }
 
 .article-project-flix h1,
