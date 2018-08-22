@@ -46,11 +46,11 @@ header {
 .container {
 	height: 100%;
 }
+
+
 .container-text {
 	position: absolute;
-	    left: 16%;
-	    top: 29%;
-	    text-align: center;
+	top: 35%;
 }
 
 .job-text,
@@ -173,6 +173,11 @@ header {
 	transform: translateX(-41%);
 }
 
+.project {
+	body {
+		overflow: hidden;
+	}
+}
 .modal {
 	position: fixed;
 	left: 0;
@@ -502,14 +507,14 @@ article {
 	display: inline-flex;
 	justify-content: space-around;
 	align-content: space-around;
-	padding-left: 10%;
+	/* padding-left: 10%; */
 }
 
 .div-btn-code {
 	display: inline-flex;
 	justify-content: space-around;
 	align-content: space-around;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 
 .project-skill-icon {
@@ -550,9 +555,6 @@ article {
 	box-shadow: 2px 4px 30px 3px rgba(0, 0, 0, 0.55);
 }
 
-.div-digital-code {
-	margin-left: 10%;
-}
 
 
 @-webkit-keyframes slide-in-left {
@@ -716,10 +718,24 @@ article {
 	}
 
 	.container-text {
-		position: absolute;
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: column;
+		/* position: absolute;
 		top: 40%;
 		left: 25%;
-	  text-align: center;
+	  text-align: center; */
+}
+
+.scroll-text {
+position: relative;
+}
+
+.job-text3 {
+			left: 0px;
 }
 
 .trigger {
@@ -732,14 +748,8 @@ article {
 	font-size: 2rem;
 }
 
-.header-text {
-	text-align: center;
 
-}
 
- .job-text3 {
-	     left: 0%;
- }
 
 	.project-desc {
 		padding-right: 1%;
@@ -812,50 +822,61 @@ article {
 	}
 
 	.div-btn {
-		margin-left: 0%;
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: column;
+		margin-bottom: 5%;
+		margin-top: 5%
+		/* margin-left: 0%;
 		margin-top: 17%;
 		margin-bottom: 5%;
 		display: block;
 		text-align: center;
+		white-space: nowrap; */
 	}
 
-	#div-yelp-btn {
-		text-align: center;
-		margin-top: 40%;
-	}
-	.project-site-btn {
-		margin-top: 10px;
-		margin-right: 19px;
-	}
-	.div-btn-code {
-		display: flex;
-		padding-top: 10%;
-		padding-right: 15%;
-	}
 
 .div-digital-code {
-	margin-top: 45%;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column;
+	margin-bottom: 5%;
+	margin-top: 5%
+	/* margin-top: 45%;
 	margin-left: 0%;
 	margin-bottom: 15%;
 	text-align: center;
+	white-space: nowrap; */
 }
 
 
 }
 
 /* Tablets */
-@media only screen and (min-width:601px) and (max-width: 1000px) {
+@media only screen and (min-width:601px) and (max-width: 1019px) {
 
-		.header-text {
-			text-align: center;
-		}
+	.container-text {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: column;
+}
 
-		.container-text {
-			position: absolute;
-			top: 40%;
-			left: 25%;
-		  text-align: center;
-		}
+	.scroll-text {
+		position: relative;
+}
+
+	.job-text3 {
+			left: 0px;
+}
 
 
 		.modal-content {
@@ -869,10 +890,6 @@ article {
 			text-align: initial;
 		}
 
-		.container-text {
-			position: absolute;
-			top: 25%;
-		}
 
 		.project-text {
 			left: 50%;
@@ -890,10 +907,7 @@ article {
 			width: auto;
 		}
 
-		.job-text3 {
-			position: absolute;
-			left: 15%;
-		}
+
 
 		.about-me-info {
 			height: 100%;
@@ -955,9 +969,14 @@ article {
 		}
 
 		.div-btn {
+			display: flex;
+			width: 100%;
+			flex-wrap: wrap;
 			margin-bottom: 5%;
+			margin-top: 5%
+			/* margin-bottom: 5%;
 			margin-top: 5%;
-			margin-left: 20%;
+			margin-left: 20%; */
 		}
 
 		.div-digital-code {
@@ -2023,10 +2042,44 @@ article {
 
 
 /* Desktop Styles */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1020px) {
 	.article-project-flix,
 	.article-project-digital,
 	.article-project-yelp {
 		height: 100vh;
 	}
+
+	.container-text {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: column;
+		/* position: absolute;
+		top: 40%;
+		left: 25%;
+		text-align: center; */
+}
+
+.scroll-text {
+position: relative;
+}
+
+	.job-text3 {
+			left: 0px;
+}
+
+.div-btn {
+	padding-left: 10%;
+}
+
+.project-site-btn {
+	margin-right: 20px;
+}
+
+.div-digital-code {
+	margin-left: 10%;
+}
+
 }
