@@ -333,6 +333,10 @@ em {
 	color: #181818;
 }
 
+.project {
+	z-index: 1;
+}
+
 .contact-info {
 	float: right;
 	width: 50%;
