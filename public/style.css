@@ -192,8 +192,9 @@ header {
 	height: 69%;
 	overflow: hidden;
 	border-radius: 0.5rem;
-
+	z-index: 9000;
 }
+
 .about-me-info,
 .contact-info {
 	display: flex;
