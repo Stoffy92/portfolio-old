@@ -333,11 +333,6 @@ em {
 	color: #181818;
 }
 
-.project {
-	position: relative;
-	z-index: 1;
-}
-
 .contact-info {
 	float: right;
 	width: 50%;
@@ -459,8 +454,6 @@ em {
 }
 
 article {
-	position: relative;
-	z-index: 1;
 	overflow-y: auto;
 }
 
@@ -753,8 +746,6 @@ position: relative;
 	}
 
 	.modal-content {
-		position: relative;
-		z-index: 3;
 	overflow: scroll;
 	overscroll-behavior: auto contain;
 	width: 100%;
@@ -763,8 +754,6 @@ position: relative;
 
 	.about-me-info,
 	.contact-info {
-		position: relative;
-		z-index: 3;
 		display: flex;
 		flex-direction: column;
 		width: auto;
@@ -799,7 +788,7 @@ position: relative;
 	}
 
 	#close-btn {
-		top: 5%;
+		top: 106%;
 	}
 
 	#name-icon,
@@ -922,7 +911,7 @@ position: relative;
 		}
 
 		#close-btn {
-			top: 5%;
+			top: 105%;
 		}
 
 		#name-icon,
