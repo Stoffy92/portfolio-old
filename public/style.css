@@ -205,7 +205,7 @@ header {
 	overflow-y: auto;
 	justify-content: center;
 	text-align: center;
-	z-index: 3;
+
 }
 
 .no-scroll {
@@ -479,11 +479,7 @@ article {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.article-project-flix,
-.article-project-digital,
-.article-project-yelp {
 
-}
 
 .article-project-flix h1,
 .article-project-flix p,
